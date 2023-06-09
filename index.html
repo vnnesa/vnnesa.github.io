@@ -3,12 +3,14 @@
 <head>
     <title> vnnesa portofolio </title>
 <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;800&family=Roboto&display=swap');
         body {
             padding: 0;
             margin: 0;
             font-family: kanit, roboto;
             color: #000000;
             background-color: #E6F4F9;
+
         }
         header {
             display: flex;
@@ -47,7 +49,7 @@
             margin: 0;
         }
         .banner-pic img {
-            min-height: 100%;
+            min-height: 90px;
             margin-right: 10px;
             
         }
@@ -63,14 +65,15 @@
             margin-right: 90px;
         }
         .vid{
-            height: 500px;
+        
             width: 100%;
+            max-width: 1280px;
             
         }
         .ig {
-            height: 500px;
+            
             width: 100%;
-            margin-right: 90px;
+            max-width: 1280px;
         }
         .content-1 {
             margin-left: 90px;
@@ -105,31 +108,77 @@
         }
         .flex-container {
         display: flex;
-        padding-left: 250px;
-        padding-right: 250px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        margin-left: 90PX;
+        padding-left: 8px;
+        padding-right:8px;
+        padding-top: 2px;
+        padding-bottom: 2px;
         text-align: center;
         }
         .box1{
-        width:325px;
-        height:50px;
-        background:#8BD7EF;
-        margin-left: 90px;
-        margin-bottom: 90px;
-        text-align: center;
-        padding-top: 30px;
+       
         }
         .gbr1 img{
             display: inline-block;
             width: 20px;
             padding: 20px;
-            float:left;
         }
-
+        .cv {
+           display: flex;
+        }
+        .cv img{
+            width: 30px;
+        }
+        .sm {
+            max-width: 1280px;
+            padding-bottom: 90px;
+        }
+        .wrn {
+            color: #6D7577;
+        }
+        a {
+            color: #000000;
+        }
+        .bx1 {
+            background-color: #8BD7EF;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            margin-left: 15px;
+        }
+        .box1{
+            width: fit-content;
+            margin-left: 90px;
+            text-align: center;
+            padding: 10px;
+            background-color: #6D7577;
+            display: flex;
+            align-items: center;
+            
+            
+        }
+        .bx1 img{
+            width: 32px;
+            margin-left: 8px;
+        }
+        .gbr2 img{
+           
+        }
+        .cv2 {
+            display: flex;
+            align-items: center;
+        }
+        .cv2 img {
+            width: 30px;
+            margin-left: 15px;
+            padding: 5px;
+            
+        }
+        
 </style>
 </head>
 <body>
+    <div class="sm">
     <header>
         <div class="left">vnnesa</div>
         <nav> 
@@ -144,19 +193,20 @@
         <div class="banner">
             <div class="container">
             <div class="banner-description">
-                <h2>Hi, I'm Vanessa Sie</h2>
+                <h2 class="wrn">Hi, I'm Vanessa Sie</h2>
                 <h1>A Person Who Loves </h1>
                 <h1>Video Design</h1> <br>
                 <p>I’m from Indonesia and I have an interest on working as a video editor </p>
                 <p>also have been learn for more than 2 months and still love to do it every day. So </p>
                 <p>right now I am looking forward to working with you!</p>
                 <br>
-                <br>
+                <div class="cv"> 
                 <button class="blue-button">Email Me</button>
+                <span class="gbr1" >
+                    <img src="instagram.png" alt="">
+                    <img src="whatsapp.png" alt="">
+                </span>
             </div>
-            <div class="gbr1">
-                <img src="instagram.png" alt="">
-                <img src="whatsapp.png" alt="">
             </div>
             <div class="banner-pic">
                 <img src="content-creator.png" alt="gmbr">
@@ -166,7 +216,7 @@
         </div>
        
         <div class="content">
-            <h2>Selected Projects</h2>
+            <h2 class="wrn">Selected Projects</h2>
             <div class="content-pic">
                 <img src="video.jpg" alt="gmbr" class="vid">
                 <h2>Youtube Editing Video</h2>
@@ -183,7 +233,7 @@
         <br>
 
         <div id="banner">
-            <h2>Tools I Use</h2>
+            <h2 class="wrn">Tools I Use</h2>
             <div class="inline-block">
                 <img src="photoshop.png" class="ph" style="width: 100%;">
             </div>
@@ -200,11 +250,11 @@
         <br>
 
         <div id="text">
-            <h2>Why Hire Me?</h2>
+            <h2 class="wrn">Why Hire Me?</h2>
         </div>
             <div class="flex-container">
                 <div>
-                    <img src="profile.png" class="b" style="width: 100%;">
+                    <img src="profile.png" class="a" style="width: 150px;">
                     <h2>Communicative</h2>
                     <p>I communicate what I struggle to make all crystal clear.<br> I can communicate my ideas well.</p>
                 </div>
@@ -213,21 +263,38 @@
                     <h2>Communicative</h2>  
                     <p>I communicate what I struggle to make all crystal clear. I can communicate my ideas well.</p>
                 </div> -->
-                <div style="width: 100px;"></div>
+                <div style="width: 40Px;"></div>
                 <div>
-                    <img src="profile.png" class="b" style="width: 100%;">
+                    <img src="profile.png" class="b" style="width: 150px;">
                     <h2>Collaborative</h2>
                     <p>I can work within a team, collaborate well with developers.</p>
                 </div>
-                <div style="width: 100px;"></div>
+                <div style="width: 40px;"></div>
                 <div>
-                    <img src="profile.png" class="c" style="width: 100%;">
+                    <img src="profile.png" class="c" style="width: 150px;">
                     <h2>Management Freak</h2>
                     <p>I can manage the whole process from the beginning until product delivery.</p>
                 </div>
             </div>
 
-            <div class="box1">Want to work with me?</div>
+            <br>
+            <br>
+            <br>
+
+            <div class="cv2"> 
+            <div class="box1"><span>Want to work with me?</span>
+                <button class="bx1">Email Me
+                   
+                        <img src="email.png" alt="">
+    
+                </button>   
+            </div>
+            <span class="gbr2" >
+                <img src="instagram.png" alt="">
+                <img src="whatsapp.png" alt="">
+            </span>
+         </div>
+
 
      
             <!--<div class="pict">
@@ -244,5 +311,6 @@
             </div>
          </div>
         -->
+</div>
 </body>
 </html>
